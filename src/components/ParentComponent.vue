@@ -5,7 +5,7 @@ import ChildComponent from "./ChildComponent.vue";
 const numb1 = ref(0);
 const numb2 = ref(0);
 
-const childRef = ref<typeof ChildComponent | null>(null);
+const childRef = ref<InstanceType<typeof ChildComponent> | null>(null);
 </script>
 
 <template>
